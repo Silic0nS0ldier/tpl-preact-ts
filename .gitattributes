@@ -1,0 +1,4 @@
+* test eol=lf
+
+# Images being destroyed? Exclude them from line ending normalisation by marking them as binary
+# *.jpg binary

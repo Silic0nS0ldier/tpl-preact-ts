@@ -1,0 +1,11 @@
+{
+	"recommendations": [
+        // Highly recommended, allows `.editorconfig` to do its job
+        "editorconfig.editorconfig",
+        // Encourages leaner imports, keeps bundle sizes down
+        "wix.vscode-import-cost",
+        // Better productivity long term, especially among teams
+        "eamodio.gitlens"
+	],
+	"unwantedRecommendations": []
+}
