@@ -1,10 +1,10 @@
 import del from "del";
-import alias from 'rollup-plugin-alias';
-import commonjs from 'rollup-plugin-commonjs';
+import alias from '@rollup/plugin-alias';
+import commonjs from '@rollup/plugin-commonjs';
 import ignore from 'rollup-plugin-ignore';
-import nodeResolve from 'rollup-plugin-node-resolve';
+import nodeResolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
-import typescript from 'rollup-plugin-typescript';
+import typescript from '@rollup/plugin-typescript';
 import done from './tasks/rollup/rollup-plugin-done';
 
 /**
@@ -12,10 +12,10 @@ import done from './tasks/rollup/rollup-plugin-done';
  */
 const corePlugins = [
     typescript(),
-    alias({
-        "react-dom": "node_modules/preact/compat/dist/compat.module.js",
-        "react": "node_modules/preact/compat/dist/compat.module.js"
-    }),
+    alias([
+        { find: 'react-dom', replacement: 'node_modules/preact/compat/dist/compat.module.js', },
+        { find: 'react', replacement: 'node_modules/preact/compat/dist/compat.module.js', },
+    ]),
 ];
 
 /** @type {import("rollup").InputOptions[]} */

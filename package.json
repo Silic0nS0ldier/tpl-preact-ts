@@ -1,26 +1,26 @@
 {
     "private": true,
     "dependencies": {
-        "preact": "^10.0.0-beta.2"
+        "preact": "^10.2.1"
     },
     "devDependencies": {
         "@types/html-minifier": "^3.5.3",
-        "@types/node": "^12.0.8",
-        "@types/react": "^16.8.20",
-        "@types/react-dom": "^16.8.4",
-        "del": "^4.1.1",
+        "@types/node": "^13.1.8",
+        "@types/react": "^16.9.17",
+        "@types/react-dom": "^16.9.5",
+        "del": "^5.1.0",
         "html-minifier": "^4.0.0",
-        "react": "npm:preact@^10.0.0-beta.2",
-        "react-dom": "^16.8.6",
-        "rollup": "^1.15.5",
-        "rollup-plugin-alias": "^1.5.2",
-        "rollup-plugin-commonjs": "^10.0.0",
+        "react": "npm:preact@^10.2.1",
+        "react-dom": "^16.12.0",
+        "rollup": "^1.29.1",
+        "@rollup/plugin-alias": "^3.0.0",
+        "@rollup/plugin-commonjs": "^11.0.1",
         "rollup-plugin-ignore": "^1.0.5",
-        "rollup-plugin-node-resolve": "^5.0.2",
-        "rollup-plugin-terser": "^5.0.0",
-        "rollup-plugin-typescript": "^1.0.1",
+        "@rollup/plugin-node-resolve": "^7.0.0",
+        "rollup-plugin-terser": "^5.2.0",
+        "@rollup/plugin-typescript": "^2.1.0",
         "tslib": "^1.10.0",
-        "typescript": "^3.5.2"
+        "typescript": "^3.7.5"
     },
     "scripts": {
         "build": "rollup -c",
